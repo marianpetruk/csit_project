@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="uk">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Lviv Quest</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDvnDP7eJSgqHWZkEUGiUsgHD65dFQTEXQ&sensor=false&libraries=geometry&libraries=places&language=uk"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+    <body>
+        <div class="lviv_logo"></div>
+        <div class="logo"></div>
+        <section id="starts" style="display:block;width:100%;height:100%;">
+            <div id="pano" style="width:100%;height:100%;"></div>
+            <article id="top_right_bar" class="magictime perspectiveUpRetourn" >
+                <div class="game_info" id="round">
+                    <span class="game_info_label">Раунд</span>
+                    <span class="game_info_value" id="game_round">1 / 10</span>
+                </div>
+                <div class="game_info" id="gscore">
+                    <span class="game_info_label">Бали</span>
+                    <div class="game_info_value" id="score_value">0</div>
+                </div>
+            </article>
+            <aside id="rightContainer">
+                <div id="map_canvas" style="box-shadow: 0px 0px 64px 3px rgba(0,0,0,0.55);cursor:crosshair;margin-left:7px;margin-top:20px;width:95%; height: 95%;"></div>
+                <button type="button" id="makeGuess">Зробити припущення</button>
+            </aside>
+        </section>
+        <section id="guesss" style="display:none;width:100%;height:100%;">
+            <div id="guessm" style="position: relative;    overflow: hidden;transform: translateZ(0px);width:100%;height:100%;"></div>
+            <div id="score">
+                <div id="score_dist"></div>
+                <hr id="sc_divider">
+                <p id="score_s"></p>
+                <div id="marker2">
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="40px" viewBox="0 0 100 165" enable-background="new 0 0 100 165" xml:space="preserve">
+                    <path fill="#3333CC" fill-opacity="0.9" stroke="gold" stroke-width="10"  d="M50,0C22.382,0,0,21.966,0,49.054C0,76.151,50,165,50,165s50-88.849,50-115.946C100,21.966,77.605,0,50,0z"></path>
+                </svg>
+            </div>
+            <div class="progress">
+                <div id="p_bar"></div>
+            </div>
+            <button type="button" class="hvr-bubble-float-right" id="nextr">Наступний Раунд</button>
+        </div>
+        <span id="mailto"><a href="mailto:marian.petruk@gmail.com?subject=Lviv-quest"><b>Marian Petruk</b></a> 2015</span>
+    </section>
+</body>
+</html>
