@@ -33,7 +33,7 @@ function xy_random() {
 
 function initialize() {
     xy_i = random_in[j];
-    var myLatlng = new google.maps.LatLng(49.84, 23.99);
+    var myLatlng = new google.maps.LatLng(49.84, 24.02);
     var myOptions = {
         zoom: 12,
         center: myLatlng,
@@ -80,8 +80,10 @@ function initialize() {
             draggable: true,
             animation: google.maps.Animation.DROP
         });
-        guessj = location.j;
-        guessC = location.C;
+        console.log(marker.position);
+        console.log(location[Object.keys(location)[0]])
+        guessj = location[Object.keys(location)[0]];
+        guessC = location[Object.keys(location)[1]];
         marker.setMap(map);
         last_marker = marker;
         document.getElementById("makeGuess").className = "hvr-bubble-float-top";
