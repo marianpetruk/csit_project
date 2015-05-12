@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700,400&subset=latin,cyrillic-ext,cyrillic);
 html,
 body,
 #map-canvas {
@@ -5,7 +6,7 @@ body,
     margin: 0;
     padding: 0
 }
-.logo{
+.logo {
     width: 22%;
     top: 15px;
     background-repeat: no-repeat;
@@ -16,7 +17,7 @@ body,
     z-index: 2;
     background-size: 50%;
 }
-.lviv_logo{
+.lviv_logo {
     width: 22%;
     top: 15%;
     background-repeat: no-repeat;
@@ -42,7 +43,7 @@ body {
     bottom: 80px;
     cursor: default;
     display: block;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     height: 300px;
     overflow-x: visible;
     overflow-y: visible;
@@ -59,7 +60,7 @@ body {
     bottom: 80px;
     cursor: default;
     display: block;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     height: 350px;
     position: absolute;
     right: 30px;
@@ -97,7 +98,7 @@ body:before {
     -webkit-box-shadow: 0 1px 3px #666;
     -moz-box-shadow: 0 1px 3px #666;
     box-shadow: 0 1px 3px #666;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     text-shadow: #2a8d7b -1px -1px;
     color: #fff;
     font-size: 18px;
@@ -121,6 +122,7 @@ a {
     cursor: default
 }
 #score {
+    font-family: 'Open Sans', sans-serif;
     position: absolute;
     bottom: 100px;
     width: 50%;
@@ -133,12 +135,12 @@ a {
 #score_dist {
     margin-top: 10px;
     text-align: center;
-    font-family: Helvetica, sans-serif
+    font-family: 'Open Sans', sans-serif;
 }
 #score_s {
     margin-top: 30px;
     text-align: center;
-    font-family: Helvetica, sans-serif
+    font-family: 'Open Sans', sans-serif;
 }
 #p_bar {
     background-color: #33C;
@@ -198,7 +200,7 @@ span {
     height: 30px;
     position: absolute;
     left: 4%;
-    top: 49%
+    top: 52%
 }
 #sc_divider {
     border: 0;
@@ -215,10 +217,10 @@ span {
     background: rgba(0, 0, 0, .7);
     border-bottom-left-radius: 4px;
     padding: 10px 10px 10px 0;
-    padding: 5px;
+    padding: 8px;
     height: 40px;
     width: 167px;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     -webkit-box-shadow: 0 0 34px 0 rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0 0 34px 0 rgba(0, 0, 0, 0.75);
     box-shadow: 0 0 34px 0 rgba(0, 0, 0, 0.75)
@@ -232,13 +234,13 @@ span {
     margin: 2px 0;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    font-size: 10px;
+    font-size: 11px;
     color: #7d7d7d
 }
 .game_info_value {
     color: #fff;
     text-align: center;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     display: block
 }
 #nextr {
@@ -258,7 +260,7 @@ span {
     -webkit-box-shadow: 0 1px 3px #666;
     -moz-box-shadow: 0 1px 3px #666;
     box-shadow: 0 1px 3px #666;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     text-shadow: #2a8d7b -1px -1px;
     color: #fff;
     font-size: 18px;
@@ -282,6 +284,7 @@ span {
     text-align: center
 }
 /*animation*/
+
 @-webkit-keyframes tinUpIn {
     0% {
         opacity: 0;
@@ -329,6 +332,7 @@ span {
     animation-fill-mode: both
 }
 /*animation_out*/
+
 .animout {
     -webkit-animation-name: tinUpIn;
     animation-name: tinUpIn
@@ -353,6 +357,7 @@ span {
     }
 }
 /* Bubble Float Top */
+
 .hvr-bubble-float-top {
     display: inline-block;
     vertical-align: middle;
@@ -408,6 +413,7 @@ span {
     animation-duration: 2s
 }
 /* Bubble Float Right */
+
 .hvr-bubble-float-right {
     display: inline-block;
     vertical-align: middle;
@@ -454,18 +460,18 @@ span {
     -webkit-transform: translateX(10px);
     transform: translateX(10px)
 }
-#mailto{
-  display:none;
- position: absolute;
-  z-index: 3;
-  bottom: 31px;
-  right: 43px;
-  font-family: Arial;
-  font-size: 14px;
+#mailto {
+    font-family: 'Open Sans', sans-serif;
+    display: none;
+    position: absolute;
+    z-index: 3;
+    bottom: 31px;
+    right: 43px;
+    font-size: 14px;
 }
-#mailto a{
-  cursor:pointer;
+#mailto a {
+    cursor: pointer;
 }
-#mailto a:hover{
-  text-decoration: none;
+#mailto a:hover {
+    text-decoration: none;
 }

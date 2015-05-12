@@ -80,8 +80,6 @@ function initialize() {
             draggable: true,
             animation: google.maps.Animation.DROP
         });
-        console.log(marker.position);
-        console.log(location[Object.keys(location)[0]])
         guessj = location[Object.keys(location)[0]];
         guessC = location[Object.keys(location)[1]];
         marker.setMap(map);
@@ -203,7 +201,7 @@ function result_b() {
         zoomControl: true
     }
     var map2 = new google.maps.Map(document.getElementById("guessm"), myOptions2);
-    document.getElementById("marker2").style.top = "57%";
+    document.getElementById("marker2").style.top = "61%";
     var score_s = document.getElementById("score_s");
     score_s.innerHTML = "Ваш загальний рахунок " + "<span style='color:orange;'>" + score_sum + "</span>" + " з <span style='color:orange;'>40000</span> (" + score_sum * 100 / 40000 + "%) можливих балів";
     var scoredist = document.getElementById("score_dist");
@@ -281,6 +279,6 @@ function restart() {
     document.getElementById("guesss").style.display = "none";
     document.getElementById("starts").style.display = "block";
     document.getElementById("nextr").innerHTML = "Наступний Раунд";
-    document.getElementById("marker2").style.top = "49%";
+    document.getElementById("marker2").style.top = "52%";
     initialize();
 }
