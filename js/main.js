@@ -80,8 +80,10 @@ function initialize() {
             draggable: true,
             animation: google.maps.Animation.DROP
         });
-        guessj = location[Object.keys(location)[0]];
-        guessC = location[Object.keys(location)[1]];
+
+        guessj = location.lat();
+        guessC = location.lng();
+
         marker.setMap(map);
         last_marker = marker;
         document.getElementById("makeGuess").className = "hvr-bubble-float-top";
