@@ -2,4 +2,9 @@
 
 Game about the city of Lviv, Ukraine
 
-![Mockup1](https://dl.dropboxusercontent.com/u/50572858/1.jpg)
+### Logo
+<img src="https://marianpetruk.github.io/img/lviv_csit_2015_1.jpg" height="200" />
+
+## Mockups:
+![Mockup1](https://marianpetruk.github.io/img/lviv_csit_2015_2.jpg)
+![Mockup2](https://marianpetruk.github.io/img/lviv_csit_2015_3.jpg)
